@@ -1,17 +1,21 @@
 {
-	"name": "eoe.js",
-	"version": "1.0.0",
-	"description": "Eye Of Eternity",
-	"scripts": {
-		"build": "webpack",
-		"dev": "webpack -w"
-	},
-	"main": "./src/index.ts",
-	"license": "MIT",
-	"dependencies": {
-		"webpack": "3.10.0",
-		"webpack-dev-server": "2.11.0",
+  "name": "eoe.js",
+  "version": "1.0.0",
+  "description": "Eye Of Eternity",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack -w",
+	"eslint": "eslint . ",
+    "fix": "npm run eslint -- --fix"
+  },
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.0",
     "typescript": "2.6.2",
-    "ts-loader":"3.2.0"
-	}
+    "ts-loader": "3.2.0",
+    "eslint": "^4.15.0",
+    "eslint-config-egg": "^5.1.1"
+  }
 }
